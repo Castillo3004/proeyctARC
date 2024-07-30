@@ -1,0 +1,8 @@
+<div class="container w-full h-full flex justify-center  my-32">
+  <div class="flex flex-col gap-2 w-2/4">
+    <textarea class="border border-racSecondary/30 rounded-md p-3" [(ngModel)]="query" rows="5" placeholder="Ingresa tu consulta de SPARQL"></textarea>
+    <button (click)="executeQuery()" class="bg-racSecondary py-3 w-full text-racWhite rounded-md">Ejecutar Query</button>
+  </div>
+  <pre>{{ results | json }}</pre>
+</div>
+
